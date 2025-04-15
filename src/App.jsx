@@ -27,6 +27,7 @@ function App() {
       <Header />
       <SearchBar searchTerm={searchTerm} onSearch={handleSearch} />
       <AddExpenseForm onAddExpense={handleAddExpense} />
+      <ExpensesTable />
     </div>
   );
 }
