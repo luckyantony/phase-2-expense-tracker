@@ -20,7 +20,14 @@ function App() {
     setSearchTerm(term);
   };
 
-  
+  const handleDelete = (id) => {
+    setExpenses(expenses.filter(expense => expense.id !== id));
+  };
+
+  const filteredExpenses = expenses.filter(exp =>
+    exp.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    exp.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="App">
