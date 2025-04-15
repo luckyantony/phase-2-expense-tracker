@@ -27,7 +27,7 @@ function App() {
       <Header />
       <SearchBar searchTerm={searchTerm} onSearch={handleSearch} />
       <AddExpenseForm onAddExpense={handleAddExpense} />
-      <ExpensesTable />
+      <ExpensesTable expenses={filteredExpenses} onDelete={handleDelete} />
     </div>
   );
 }
