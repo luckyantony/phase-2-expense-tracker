@@ -1,12 +1,16 @@
-# React + Vite
+# 💸 Expense Tracker (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic **Expense Tracker App** built using **React**. It allows users to:
 
-Currently, two official plugins are available:
+- Add new expenses
+- View expenses in a table
+- Search/filter expenses by name or description
+- Delete individual expenses
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was created as a **Phase 2 Code Challenge** to demonstrate understanding of React basics — including state, props, components, and event handling.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+expense-tracker/ │ ├── public/ ├── src/ │ ├── components/ │ │ ├── ExpenseForm.jsx │ │ ├── ExpenseItem.jsx │ │ ├── ExpenseTable.jsx │ │ └── SearchBar.jsx │ ├── App.jsx │ ├── App.css │ └── main.jsx │ ├── package.json └── README.md
