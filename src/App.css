@@ -26,11 +26,7 @@ input, button {
   border-radius: 4px;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="date"] {
-  width: calc(25% - 10px);
-}
+
 
 form {
   display: flex;
