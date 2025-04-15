@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ExpensesTable({ expenses, onDelete }) {
   return (
     <table>

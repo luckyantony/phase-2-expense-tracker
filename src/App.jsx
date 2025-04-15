@@ -3,6 +3,7 @@ import Header from './components/Header';
 import AddExpenseForm from './components/AddExpenseForm';
 import ExpensesTable from './components/ExpensesTable';
 import SearchBar from './components/SearchBar';
+import './App.css';
 
 function App() {
   const [expenses, setExpenses] = useState([
