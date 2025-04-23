@@ -2,12 +2,20 @@ import React from 'react';
 
 function SearchBar({ searchTerm, onSearch }) {
     return (
-      <input
-        type="text"
-        placeholder="🔍 Search by name or description"
-        value={searchTerm}
-        onChange={(e) => onSearch(e.target.value)}
-      />
+      <div>
+        <input
+          type="text"
+          placeholder="🔍 Search by name or description"
+          value={searchTerm}
+          onChange={(e) => onSearch(e.target.value.trim())}
+        />
+        <button
+          onClick={() => onSearch('')}
+        >
+          clear
+        </button>
+
+      </div>
     );
   }
   
