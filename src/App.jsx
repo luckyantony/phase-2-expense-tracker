@@ -18,14 +18,12 @@ function App() {
 
   const [searchTerm, setSearchTerm] = useState('');
 
-  const [message, setMessage] = useState('');
 
 
   const handleAddExpense = (newExpense) => {
     setExpenses([...expenses, newExpense]);
 
-    setMessage(successMessage);
-    setTimeout(() => setMessage(''), 3000);
+
   };
 
   const handleSearch = (term) => {
@@ -35,8 +33,6 @@ function App() {
   const handleDelete = (id) => {
     setExpenses(expenses.filter(expense => expense.id !== id));
 
-    setMessage('Expense deleted!');
-    setTimeout(() => setMessage(''), 3000);
   };
 
   const filteredExpenses = expenses.filter(exp =>
